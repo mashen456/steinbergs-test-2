@@ -23,6 +23,7 @@ function App() {
           <Route path='/reports' component={Reports} />
           <Route path='/products' component={Products} />
           <Route path='/logout' component={LogOut} />
+          <Route path='/db' component={Database} />
         </Switch>
       </Router>
     </>
