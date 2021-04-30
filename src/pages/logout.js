@@ -1,14 +1,14 @@
 import React from 'react';
+import {Redirect} from 'react-router-dom';
 import {firebaseApp} from "../firebase";
 
 function LogOut() {
 
     firebaseApp.auth().signOut();
+    window.location = "/signin";
 
     return (
-        <div className='logout'>
-            <h1>You are logged out</h1>
-        </div>
+        <Redirect to="/signin" />
     );
 }
 

@@ -12,16 +12,20 @@ class SignIn extends Component{
         this.state ={
             email: "",
             password: "",
-            error: "",
+            error: ""
         }
     }
 
     signIn(){
+        this.setState({error: ""});
         console.log("State", this.state);
         const {email, password} = this.state;
         firebaseApp.auth().signInWithEmailAndPassword(email, password)
             .catch(error => {
                 this.setState({error})
+            }).then(() => {if(!this.state.error){
+                    window.location = "/";
+                }
             });
     }
 
