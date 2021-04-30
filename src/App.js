@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
 import LogOut from "./pages/logout";
+import Database from "./pages/database";
 import {firebaseApp} from "./firebase";
 
 
