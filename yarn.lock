@@ -1096,10 +1096,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
-  version "7.13.17"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.17.tgz#8966d1fc9593bf848602f0662d6b4d0069e3a7ec"
-  integrity sha512-NCdgJEelPTSh+FEFylhnP1ylq848l1z9t9N0j1Lfbcw0+KXGjsTvUmkxy+voLLXB5SOKMbLLx4jxYliGrYQseA==
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
+  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1107,6 +1107,13 @@
   version "7.12.18"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.18.tgz#af137bd7e7d9705a412b3caaf991fe6aaa97831b"
   integrity sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.7.6", "@babel/runtime@^7.9.2":
+  version "7.13.17"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.17.tgz#8966d1fc9593bf848602f0662d6b4d0069e3a7ec"
+  integrity sha512-NCdgJEelPTSh+FEFylhnP1ylq848l1z9t9N0j1Lfbcw0+KXGjsTvUmkxy+voLLXB5SOKMbLLx4jxYliGrYQseA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1254,10 +1261,10 @@
   dependencies:
     "@firebase/app-types" "0.6.2"
 
-"@firebase/database@0.9.11":
-  version "0.9.11"
-  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.9.11.tgz#87fba58cb6f3e93d56a88b9130507c9988fa2f97"
-  integrity sha512-f1+39Q1Zxnnu7sswz5oOZUC3CTMEEQR6hFxmE+ZJiw5+/Uy/wK11DS/KofSj0VCe0cPhPHxNzmLjUU5/5yu9Kw==
+"@firebase/database@0.9.12":
+  version "0.9.12"
+  resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.9.12.tgz#056476b085aa26798c1497c39dc365009de4bd30"
+  integrity sha512-2zBb6dL3mKkplI+vJ5gMRg8hxzKxfgv2HF5ICz7LOeZapxknyWsMMX3Hou/Y71FhI7Nesmdenj+wuilkVa8rEA==
   dependencies:
     "@firebase/auth-interop-types" "0.1.6"
     "@firebase/component" "0.4.1"
@@ -5411,15 +5418,15 @@ find-up@^3.0.0:
     locate-path "^3.0.0"
 
 firebase@^8.4.2:
-  version "8.4.2"
-  resolved "https://registry.yarnpkg.com/firebase/-/firebase-8.4.2.tgz#5b3eff63683bd7379677b79f8efaf8e2ed2be5d4"
-  integrity sha512-PUzobCZ2z6nEvb3IRxz9L1H/q7e7LaKhx6vEUYhKTIK7WMYg+iiUE67IY4Lvh5/IWugclAH8SX5ny8azSy2hTw==
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/firebase/-/firebase-8.4.3.tgz#d81170d86d8c752f58d8f1ccd715e5e97f6e3929"
+  integrity sha512-STM7xvFBs9MSgtReaWX901HPfIlsA7CNLKkXyVW+aKFmb4znmSxiRFT+pbLyor+ueb5Sj+/VjC97g51Om+Jw4w==
   dependencies:
     "@firebase/analytics" "0.6.9"
     "@firebase/app" "0.6.20"
     "@firebase/app-types" "0.6.2"
     "@firebase/auth" "0.16.5"
-    "@firebase/database" "0.9.11"
+    "@firebase/database" "0.9.12"
     "@firebase/firestore" "2.2.5"
     "@firebase/functions" "0.6.7"
     "@firebase/installations" "0.4.25"
@@ -9376,9 +9383,9 @@ prop-types@^15.6.2, prop-types@^15.7.2:
     react-is "^16.8.1"
 
 protobufjs@^6.8.6:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.0.tgz#b890a2d3f64c62f0395e1e000d39ff91634bafb7"
-  integrity sha512-i4usrGD86mtOLnoTwUsVXphDY7yHM2rDiV3JU4Ix43BOtHi0DHy5rSCciX8MRHSYHaxnoc0TcpwEBlrNUAxvQQ==
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.1.tgz#327dcee492fbcd421a6cd6200f79bfed6efb2405"
+  integrity sha512-7KCLPvNGF/oDv/OXz+Zn2ViJx8x9WUKs5HrxZ5Gz0F2LD8jSTcsA1z9tBtOlPVVnJELOaFL+zj+oLc/WWSqlzw==
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
