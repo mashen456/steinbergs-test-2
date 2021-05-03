@@ -48,9 +48,16 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Signin',
+    path: '/signin',
+    icon: <IoIcons5.IoLogIn />,
+    cName: 'nav-text'
+  },
+
+  {
     title: 'Log out',
     path: '/logout',
-    icon: <IoIcons5.IoExit />,
+    icon: <IoIcons5.IoLogOut />,
     cName: 'nav-text'
   }
 ];
