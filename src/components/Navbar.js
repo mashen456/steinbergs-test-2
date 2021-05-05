@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import SendIcon from '@material-ui/icons/Send';
+import {ListItem, ListItemIcon, ListItemText} from "@material-ui/core";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -36,6 +38,16 @@ function Navbar() {
                 </li>
               );
             })}
+
+            <ListItem button>
+              <ListItemIcon style={{marginLeft:"16px"}}>
+                <SendIcon />
+              </ListItemIcon>
+              <ListItemText  primary="Sent mail" />
+            </ListItem>
+
+
+
           </ul>
 
         </nav>
