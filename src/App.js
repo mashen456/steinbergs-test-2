@@ -11,14 +11,11 @@ import LogOut from "./pages/logout";
 import Database from "./pages/database";
 import {ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import {Paper} from "@material-ui/core";
+import Clients from "./pages/clients";
+import theme from "./styles/theme";
+
 
 function App() {
-    const [darkMode,setDarkMode] = useState(false);
-    const theme = createMuiTheme({
-        palette:{
-            type: darkMode ? "light": "dark",
-        },
-    });
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -30,6 +27,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/reports' component={Reports} />
           <Route path='/products' component={Products} />
+          <Route path='/clients' component={Clients} />
           <Route exact path="/signin" component={SignIn} />
           <Route path='/logout' component={LogOut} />
           <Route path='/db' component={Database} />
@@ -40,5 +38,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
