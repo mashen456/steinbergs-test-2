@@ -108,10 +108,21 @@ const useStyles = makeStyles((theme) => ({
 function Navbar() {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
+    const [open2, setOpen2] = React.useState(true);
+    const [open3, setOpen3] = React.useState(true);
 
     const handleClick = () => {
         setOpen(!open);
     };
+
+    const handleClick2 = () => {
+        setOpen2(!open2);
+    };
+
+    const handleClick3 = () => {
+        setOpen3(!open3);
+    };
+
 
 
     const [sidebar, setSidebar] = useState(false);
@@ -185,14 +196,14 @@ function Navbar() {
                             component="nav"
                             className={classes.root}
                         >
-                            <ListItem button onClick={handleClick} className={classes.stymain}>
+                            <ListItem button onClick={handleClick2} className={classes.stymain}>
                                 <ListItemIcon className={classes.MuiListItemIcon}>
                                     <InboxIcon/>
                                 </ListItemIcon>
                                 <ListItemText primary="Inbox"/>
-                                {open ? <ExpandLess/> : <ExpandMore/>}
+                                {open2 ? <ExpandLess/> : <ExpandMore/>}
                             </ListItem>
-                            <Collapse in={open} timeout="auto" unmountOnExit>
+                            <Collapse in={open2} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
                                     <ListItem button className={classes.nested} className={classes.stysub}>
                                         <ListItemIcon className={classes.MuiListItemIcon}>
@@ -221,14 +232,14 @@ function Navbar() {
                             component="nav" id="sda"
                             className={classes.root}
                         >
-                            <ListItem button onClick={handleClick} className={classes.stymain}>
+                            <ListItem button onClick={handleClick3} className={classes.stymain}>
                                 <ListItemIcon className={classes.MuiListItemIcon}>
                                     <InboxIcon/>
                                 </ListItemIcon>
                                 <ListItemText primary="Inbox"/>
-                                {open ? <ExpandLess/> : <ExpandMore/>}
+                                {open3 ? <ExpandLess/> : <ExpandMore/>}
                             </ListItem>
-                            <Collapse in={open} timeout="auto" unmountOnExit>
+                            <Collapse in={open3} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
                                     <ListItem button className={classes.nested} className={classes.stysub}>
                                         <ListItemIcon className={classes.MuiListItemIcon}>
