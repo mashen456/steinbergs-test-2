@@ -19,7 +19,6 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-          <Paper style={{height:"100vh"}}>
       <Router>
         <Navbar />
         <Switch>
@@ -33,7 +32,6 @@ function App() {
           <Route path='/db' component={Database} />
         </Switch>
       </Router>
-          </Paper>
       </ThemeProvider>
     </>
   );

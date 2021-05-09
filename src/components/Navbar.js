@@ -107,9 +107,9 @@ const useStyles = makeStyles((theme) => ({
 
 function Navbar() {
     const classes = useStyles();
-    const [open, setOpen] = React.useState(true);
-    const [open2, setOpen2] = React.useState(true);
-    const [open3, setOpen3] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
+    const [open2, setOpen2] = React.useState(false);
+    const [open3, setOpen3] = React.useState(false);
 
     const handleClick = () => {
         setOpen(!open);
