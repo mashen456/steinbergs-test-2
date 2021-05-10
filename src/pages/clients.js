@@ -52,7 +52,6 @@ class Clients extends Component{
     writeToFireBase(e){
           firebaseDBA.ref('kunden/uid-'+ Date.now()+'/').set(
             {
-
             firma:this.state.firma,
             name:this.state.name,
             plz:this.state.plz,
@@ -160,7 +159,7 @@ render() {
 
             <Grid container direction="row"  justify="center" alignItems="center" style={{paddingTop: "10px", }}>
 
-                <Grid item xs={0} sm={0} md={0} lg={2} xl={2} ></Grid>
+                <Grid item  lg={2} xl={2} ></Grid>
 
                 <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
                     <Grid container direction="row"  justify="center" alignItems="stretch" style={{paddingTop: "10px", }}>
@@ -195,7 +194,7 @@ render() {
 
                 {this.state.clients.map((client) =>(
 
-                    <Grid item xs={12} sm={6} md={4} lg={3} xl={2} >
+                    <Grid item xs={12} sm={6} md={4} lg={4} xl={3} >
                         <Card style={{backgroundColor:"gray"} }>
                             <CardContent style={{paddingBottom:"5px"}}>
                                 <Typography gutterBottom variant="h5" component="h2">
@@ -206,10 +205,10 @@ render() {
                                 </Typography>
                             </CardContent>
                             <CardActions disableSpacing style={{marginTop:"0px", paddingTop:"1px"}}>
-                                <IconButton aria-label="add to favorites">
-                                    <EditIcon onClick={()=>(
-                                        this.setState({tel:client.tel, name:client.name, firma:client.firma, key:client.key, plz:client.plz, tele:client.tel, openEdit:true})
-                                    )} />
+                                <IconButton aria-label="add to favorites" onClick={()=>(
+                                    this.setState({name:client.name, firma:client.firma, key:client.key, plz:client.plz, tele:client.tel, openEdit:true})
+                                )} >
+                                    <EditIcon />
                                 </IconButton>
                                 <IconButton aria-label="share" onClick={() => this.deleteClient(client.key)}>
                                     <DeleteIcon />
@@ -222,7 +221,7 @@ render() {
                 </Grid>
 
                 </Grid>
-                <Grid item xs={0} sm={0} md={0} lg={2} xl={2}/>
+                <Grid item lg={2} xl={2}/>
 
 
 
